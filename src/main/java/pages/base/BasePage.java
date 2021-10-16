@@ -1,5 +1,6 @@
 package pages.base;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -31,6 +32,10 @@ public class BasePage {
             return false;
         }
         return true;
+    }
+
+    public WebElement findElementStringFormat(String path, String value) {
+        return driver.findElement(By.xpath(String.format(path, value)));
     }
 
     public WebElement waitElementIsVisible(WebElement element) {

@@ -4,6 +4,12 @@ public class Config {
 
     public static final int MAX_FAIL_RETRY = 2;
 
+    /**
+     * Default chrome language during initial start
+     * use double language from ISO-639
+     */
+    public static final String CHROME_LANGUAGE = "en";
+
     public static final String PLATFORM_AND_BROWSER = "win_chrome";
 
     /**

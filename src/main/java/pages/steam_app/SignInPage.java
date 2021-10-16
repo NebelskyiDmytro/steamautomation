@@ -18,12 +18,12 @@ public class SignInPage extends BasePage {
     public static WebElement passwordInput;
     @FindBy(xpath = "//button[@type=\"submit\"]")
     public static WebElement loginButton;
-    @FindBy(xpath = "//div[@id=\"error_display\"]")
-    public static WebElement failedLoginWindow;
+    @FindBy(id = "error_display")
+    public WebElement failedLoginWindow;
     @FindBy(xpath = "//div[@class=\"login_modal loginAuthCodeModal\"]")
-    public static WebElement steamGuardWindow;
+    public WebElement steamGuardWindow;
 
-    public SignInPage open() {
+    public SignInPage openPage() {
         open(Constant.Urls.SIGN_IN_URL);
         return this;
     }

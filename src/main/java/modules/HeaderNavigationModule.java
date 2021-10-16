@@ -1,10 +1,8 @@
 package modules;
 
-import constants.Constant;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.testng.Assert;
 import pages.base.BasePage;
 
 public class HeaderNavigationModule extends BasePage {
@@ -32,10 +30,13 @@ public class HeaderNavigationModule extends BasePage {
     public static WebElement accountPulldown;
     @FindBy(xpath = "//div[@id=\"global_actions\"]/a[contains(@href, \"https://steamcommunity.com/profiles/\")]")
     public static WebElement avatarButton;
+    @FindBy(id = "language_pulldown")
+    public static WebElement languagePulldown;
+
+    private static final String languageDropdownValue = "//div[@id=\"language_dropdown\"]//a[contains(text(), \"%s\")]";
 
     public void clickLoginButton() {
         waitElementIsClickable(loginButton).click();
-        Assert.assertEquals(getCurrentTitle(), Constant.Urls.SIGN_IN_TITLE);
     }
 
     public String getLoggedAccountName() {
@@ -44,6 +45,11 @@ public class HeaderNavigationModule extends BasePage {
 
     public void clickAvatar() {
         waitElementIsClickable(avatarButton).click();
+    }
+
+    public void changeLanguage(String language) {
+        waitElementIsClickable(languagePulldown).click();
+        waitElementIsClickable(findElementStringFormat(languageDropdownValue, language)).click();
     }
 
 }

@@ -1,6 +1,7 @@
 package tests.base.logintest;
 
 import common.Retry;
+import org.omg.IOP.TAG_JAVA_CODEBASE;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -8,13 +9,14 @@ import pages.steam_app.ProfilePage;
 import pages.steam_app.SignInPage;
 import tests.base.BaseTest;
 
+import static constants.Constant.ErrorMessages.*;
 import static constants.Constant.Users.*;
 
 public class Login001 extends BaseTest {
 
-    @Test(retryAnalyzer = Retry.class)
+    @Test
     public void loginSuccessTest() {
-        welcomePage.open();
+        welcomePage.openPage();
         headerNavigationModule.clickLoginButton();
         SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
         signInPage.signInWithCredentials(user1Login, user1Pass, true);
@@ -27,11 +29,11 @@ public class Login001 extends BaseTest {
 
     @Test
     public void loginFailedTest() {
-        welcomePage.open();
+        welcomePage.openPage();
         headerNavigationModule.clickLoginButton();
         SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
         signInPage.signInWithCredentials(user1Login, "incorrectPassword", true);
-        Assert.assertTrue(basePage.isElementDisplayed);
+        Assert.assertEquals(basePage.getElementAttributeValue(signInPage.failedLoginWindow, "style"), LOGIN_ERROR);
     }
 
 }
