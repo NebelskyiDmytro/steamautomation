@@ -19,6 +19,10 @@ public class BasePage {
         driver.get(url);
     }
 
+    public String getCurrentTitle() {
+        return driver.getTitle();
+    }
+
     public WebElement waitElementIsVisible(WebElement element) {
         new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(element));
         return element;
@@ -31,6 +35,10 @@ public class BasePage {
 
     public void click(WebElement element) {
         element.click();
+    }
+
+    public void fillFieldWithValue(WebElement element, String value) {
+        waitElementIsClickable(element).sendKeys(value);
     }
 
 }
