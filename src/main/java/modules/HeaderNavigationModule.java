@@ -31,7 +31,7 @@ public class HeaderNavigationModule extends BasePage {
 
     public void clickLoginButton() {
         waitElementIsClickable(loginButton);
-        loginButton.click();
+        click(loginButton);
     }
 
 }
