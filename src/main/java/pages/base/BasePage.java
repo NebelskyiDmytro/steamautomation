@@ -1,5 +1,6 @@
 package pages.base;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,6 +24,15 @@ public class BasePage {
         return driver.getTitle();
     }
 
+    public boolean isElementDisplayed(WebElement element) {
+        try {
+            element.isDisplayed();
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+        return true;
+    }
+
     public WebElement waitElementIsVisible(WebElement element) {
         new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.visibilityOf(element));
         return element;
@@ -33,8 +43,13 @@ public class BasePage {
         return element;
     }
 
-    public void click(WebElement element) {
-        element.click();
+    public WebElement waitForElementAttributeToBe(WebElement element, String attr, String value) {
+        new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.attributeToBe(element, attr, value));
+        return element;
+    }
+
+    public String getElementAttributeValue(WebElement element, String attr) {
+        return element.getAttribute(attr);
     }
 
     public void fillFieldWithValue(WebElement element, String value) {

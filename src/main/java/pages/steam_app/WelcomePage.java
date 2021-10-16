@@ -1,4 +1,4 @@
-package pages.steam_home;
+package pages.steam_app;
 
 import constants.Constant;
 import org.openqa.selenium.WebDriver;

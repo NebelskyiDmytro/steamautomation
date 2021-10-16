@@ -1,4 +1,4 @@
-package pages.steam_home;
+package pages.steam_app;
 
 import constants.Constant;
 import org.openqa.selenium.WebDriver;
@@ -39,15 +39,14 @@ public class SignInPage extends BasePage {
     }
 
     public void clickLogin() {
-        waitElementIsClickable(loginButton);
-        click(loginButton);
+        waitElementIsClickable(loginButton).click();
     }
 
     public void signInWithCredentials(String username, String pass, Boolean clickLogin) {
         fillInUsername(username);
         fillInPassword(pass);
         if (clickLogin) {
-            click(loginButton);
+            waitElementIsClickable(loginButton).click();
         }
     }
 

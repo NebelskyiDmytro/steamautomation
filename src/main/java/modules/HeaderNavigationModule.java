@@ -28,13 +28,22 @@ public class HeaderNavigationModule extends BasePage {
     public static WebElement installSteamButton;
     @FindBy(xpath = "//a[@class=\"global_action_link\"]")
     public static WebElement loginButton;
+    @FindBy(xpath = "//span[@id=\"account_pulldown\"]")
+    public static WebElement accountPulldown;
     @FindBy(xpath = "//div[@id=\"global_actions\"]/a[contains(@href, \"https://steamcommunity.com/profiles/\")]")
     public static WebElement avatarButton;
 
     public void clickLoginButton() {
-        waitElementIsClickable(loginButton);
-        click(loginButton);
+        waitElementIsClickable(loginButton).click();
         Assert.assertEquals(getCurrentTitle(), Constant.Urls.SIGN_IN_TITLE);
+    }
+
+    public String getLoggedAccountName() {
+        return waitElementIsVisible(accountPulldown).getText();
+    }
+
+    public void clickAvatar() {
+        waitElementIsClickable(avatarButton).click();
     }
 
 }
