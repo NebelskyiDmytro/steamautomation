@@ -22,6 +22,8 @@ public class SignInPage extends BasePage {
     public WebElement failedLoginWindow;
     @FindBy(xpath = "//div[@class=\"login_modal loginAuthCodeModal\"]")
     public WebElement steamGuardWindow;
+    @FindBy(id = "captchaImg")
+    public WebElement captchaImage;
 
     public SignInPage openPage() {
         open(Constant.Urls.SIGN_IN_URL);
