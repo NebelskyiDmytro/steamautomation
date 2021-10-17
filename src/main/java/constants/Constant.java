@@ -20,8 +20,8 @@ public class Constant {
     }
 
     public static class Users {
-        public static final String user1Login = "kahramanakyil";
-        public static final String user1Pass = "Nebelskyi2021";
+        public static final String USER1_LOGIN = "kahramanakyil";
+        public static final String USER1_PASS = "Nebelskyi2021";
     }
 
     public static class ErrorMessages {

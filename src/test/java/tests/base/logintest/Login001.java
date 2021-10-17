@@ -1,7 +1,6 @@
 package tests.base.logintest;
 
 import common.Retry;
-import org.omg.IOP.TAG_JAVA_CODEBASE;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,25 +13,26 @@ import static constants.Constant.Users.*;
 
 public class Login001 extends BaseTest {
 
-    @Test
+    @Test(retryAnalyzer = Retry.class)
     public void loginSuccessTest() {
         welcomePage.openPage();
         headerNavigationModule.clickLoginButton();
         SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
-        signInPage.signInWithCredentials(user1Login, user1Pass, true);
-        Assert.assertEquals(headerNavigationModule.getLoggedAccountName(), user1Login);
+        signInPage.signInWithCredentials(USER1_LOGIN, USER1_PASS, true);
+        Assert.assertEquals(headerNavigationModule.getLoggedAccountName(), USER1_LOGIN);
         headerNavigationModule.clickAvatar();
         ProfilePage profilePage = PageFactory.initElements(driver, ProfilePage.class);
-        Assert.assertEquals(profilePage.getProfileDisplayedName(), user1Login);
+        Assert.assertEquals(profilePage.getProfileDisplayedName(), USER1_LOGIN);
         Assert.assertEquals(profilePage.getProfileLevel(), 0);
     }
 
-    @Test
+    @Test(retryAnalyzer = Retry.class)
     public void loginFailedTest() {
         welcomePage.openPage();
         headerNavigationModule.clickLoginButton();
         SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
-        signInPage.signInWithCredentials(user1Login, "incorrectPassword", true);
+        signInPage.signInWithCredentials(USER1_LOGIN, "incorrectPassword", true);
+        basePage.waitForElementAttributeToBe(signInPage.failedLoginWindow, "style", LOGIN_ERROR);
         Assert.assertEquals(basePage.getElementAttributeValue(signInPage.failedLoginWindow, "style"), LOGIN_ERROR);
     }
 
