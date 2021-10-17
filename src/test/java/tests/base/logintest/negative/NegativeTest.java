@@ -12,7 +12,7 @@ import static constants.Constant.Users.USER1_LOGIN;
 
 public class NegativeTest extends BaseTest {
 
-    @Test(retryAnalyzer = Retry.class)
+    @Test
     public void loginFailedTest() {
         welcomePage.openPage();
         headerNavigationModule.clickLoginButton();

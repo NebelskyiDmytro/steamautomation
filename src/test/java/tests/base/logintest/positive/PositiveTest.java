@@ -14,7 +14,7 @@ import static constants.Constant.Users.USER1_PASS;
 
 public class PositiveTest extends BaseTest {
 
-    @Test(retryAnalyzer = Retry.class)
+    @Test
     public void loginSuccessTest() {
         welcomePage.openPage();
         headerNavigationModule.clickLoginButton();
