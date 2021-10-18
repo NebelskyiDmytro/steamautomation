@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5eb3b0b1-0013-4a85-93c3-c83e44fa19f3" name="Changes" comment="Minor changes">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/steam_app/EditProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/base/settings_tests/SettingsTest_001.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/constants/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/steam_app/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/steam_app/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/logintest/negative/NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/login_tests/negative/LoginTest_002.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/logintest/positive/PositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/login_tests/positive/LoginTest_001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testing.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testing.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +56,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PositiveTest">
+  <component name="RunManager" selected="TestNG.SettingsTest_001">
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -61,16 +68,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NegativeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest_001" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="steamautomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.base.logintest.negative.*" />
+          <option name="PATTERN" value="tests.base.login_tests.positive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.base.logintest.negative" />
-      <option name="MAIN_CLASS_NAME" value="tests.base.logintest.negative.NegativeTest" />
+      <option name="PACKAGE_NAME" value="tests.base.logintest.positive" />
+      <option name="MAIN_CLASS_NAME" value="tests.base.login_tests.positive.LoginTest_001" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -78,16 +85,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NegativeTest.loginFailedTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest_001.steamGuardTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="steamautomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.base.logintest.negative.*" />
+          <option name="PATTERN" value="tests.base.login_tests.positive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.base.logintest.positive" />
+      <option name="MAIN_CLASS_NAME" value="tests.base.login_tests.positive.LoginTest_001" />
+      <option name="METHOD_NAME" value="steamGuardTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest_002.loginFailedTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="steamautomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.base.login_tests.negative.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.base.logintest.negative" />
-      <option name="MAIN_CLASS_NAME" value="tests.base.logintest.negative.NegativeTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.base.login_tests.negative.LoginTest_002" />
       <option name="METHOD_NAME" value="loginFailedTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -96,16 +121,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SettingsTest_001" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="steamautomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.base.logintest.positive.*" />
+          <option name="PATTERN" value="tests.base.settings_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.base.logintest.positive" />
-      <option name="MAIN_CLASS_NAME" value="tests.base.logintest.positive.PositiveTest" />
+      <option name="PACKAGE_NAME" value="tests.base.settings_tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.base.settings_tests.SettingsTest_001" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -113,35 +138,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositiveTest.loginSuccessTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SettingsTest_001.emptyProfileName" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="steamautomation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.base.logintest.positive.*" />
+          <option name="PATTERN" value="tests.base.settings_tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests.base.logintest.positive" />
-      <option name="MAIN_CLASS_NAME" value="tests.base.logintest.positive.PositiveTest" />
-      <option name="METHOD_NAME" value="loginSuccessTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PositiveTest.steamGuardTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="steamautomation" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.base.logintest.positive.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests.base.logintest.positive" />
-      <option name="MAIN_CLASS_NAME" value="tests.base.logintest.positive.PositiveTest" />
-      <option name="METHOD_NAME" value="steamGuardTest" />
+      <option name="PACKAGE_NAME" value="tests.base.settings_tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.base.settings_tests.SettingsTest_001" />
+      <option name="METHOD_NAME" value="emptyProfileName" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -151,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PositiveTest" />
-        <item itemvalue="TestNG.PositiveTest.steamGuardTest" />
-        <item itemvalue="TestNG.NegativeTest.loginFailedTest" />
-        <item itemvalue="TestNG.NegativeTest" />
-        <item itemvalue="TestNG.PositiveTest.loginSuccessTest" />
+        <item itemvalue="TestNG.SettingsTest_001" />
+        <item itemvalue="TestNG.SettingsTest_001.emptyProfileName" />
+        <item itemvalue="TestNG.LoginTest_001" />
+        <item itemvalue="TestNG.LoginTest_001.steamGuardTest" />
+        <item itemvalue="TestNG.LoginTest_002.loginFailedTest" />
       </list>
     </recent_temporary>
   </component>
@@ -245,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634576347667</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Minor changes">
+      <created>1634576436951</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634576436951</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

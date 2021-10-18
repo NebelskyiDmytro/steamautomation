@@ -1,4 +1,4 @@
-package tests.base.logintest.negative;
+package tests.base.login_tests.negative;
 
 import org.testng.annotations.Test;
 import tests.base.BaseTest;
@@ -6,7 +6,7 @@ import tests.base.BaseTest;
 import static constants.Constant.LoggerMessages.CAPTCHA_SKIP_MESSAGE;
 import static constants.Constant.Users.USER1_LOGIN;
 
-public class NegativeTest extends BaseTest {
+public class LoginTest_002 extends BaseTest {
 
     @Test
     public void loginFailedTest() {

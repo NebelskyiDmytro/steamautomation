@@ -1,4 +1,4 @@
-package tests.base.logintest.positive;
+package tests.base.login_tests.positive;
 
 import common.Retry;
 import org.testng.annotations.Test;
@@ -7,9 +7,9 @@ import tests.base.BaseTest;
 import static constants.Constant.LoggerMessages.CAPTCHA_SKIP_MESSAGE;
 import static constants.Constant.Users.*;
 
-public class PositiveTest extends BaseTest {
+public class LoginTest_001 extends BaseTest {
 
-    @Test
+    @Test(retryAnalyzer = Retry.class)
     public void loginSuccessTest() {
         welcomePage.openPage();
         headerNavigationModule.clickLoginButton();
@@ -23,7 +23,7 @@ public class PositiveTest extends BaseTest {
         profilePage.verifyDisplayedLevelIs(0);
     }
 
-    @Test
+    @Test(retryAnalyzer = Retry.class)
     public void steamGuardTest() {
         welcomePage.openPage();
         headerNavigationModule.clickLoginButton();

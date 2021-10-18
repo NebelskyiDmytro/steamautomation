@@ -9,9 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.base.BasePage;
-import pages.steam_app.ProfilePage;
-import pages.steam_app.SignInPage;
-import pages.steam_app.WelcomePage;
+import pages.steam_app.*;
 
 import static common.Config.CLEAR_COOKIES_AND_STORAGE;
 import static constants.Constant.TimeoutVariables.THREAD_SLEEP;
@@ -26,6 +24,7 @@ public class BaseTest {
     protected HeaderNavigationModule headerNavigationModule;
     protected SignInPage signInPage;
     protected ProfilePage profilePage;
+    protected EditProfilePage editProfilePage;
 
     @BeforeMethod
     public void initDriverInstance() {
@@ -63,6 +62,7 @@ public class BaseTest {
         headerNavigationModule = PageFactory.initElements(driver, HeaderNavigationModule.class);
         profilePage = PageFactory.initElements(driver, ProfilePage.class);
         signInPage = PageFactory.initElements(driver, SignInPage.class);
+        editProfilePage = PageFactory.initElements(driver, EditProfilePage.class);
     }
 
 }

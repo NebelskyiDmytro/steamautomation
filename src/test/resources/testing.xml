@@ -3,8 +3,8 @@
 <suite name="Regression" verbose="1">
     <test name="RegressionTest">
         <classes>
-            <class name="tests.base.logintest.positive.PositiveTest"/>
-            <class name="tests.base.logintest.negative.NegativeTest"/>
+            <class name="tests.base.login_tests.positive.LoginTest_001"/>
+            <class name="tests.base.login_tests.negative.LoginTest_002"/>
         </classes>
     </test>
 </suite>

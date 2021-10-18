@@ -17,6 +17,8 @@ public class Constant {
         public static final String SIGN_IN_TITLE_EN = "Sign In";
         public static final String SIGN_IN_TITLE_RU = "Войти";
         public static final String SIGN_IN_TITLE_UA = "Увійти";
+        //TODO Create title verification
+        public static final String EDIT_PROFILE_TITLE_EN = "Steam Community :: Edit Profile";
     }
 
     public static class Users {

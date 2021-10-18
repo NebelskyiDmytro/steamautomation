@@ -16,6 +16,8 @@ public class ProfilePage extends BasePage {
     public static WebElement profileName;
     @FindBy(xpath = "//span[@class=\"friendPlayerLevelNum\"]")
     public static WebElement profileLevel;
+    @FindBy(xpath = "//span[text() = \"Edit Profile\"]/ancestor::a")
+    public static WebElement editProfileButton;
 
     public String getProfileDisplayedName() {
         return waitElementIsVisible(profileName).getText();
@@ -31,6 +33,10 @@ public class ProfilePage extends BasePage {
 
     public void verifyDisplayedLevelIs(int level) {
         Assert.assertEquals(getProfileLevel(), level);
+    }
+
+    public void clickEditProfile() {
+        waitElementIsClickable(editProfileButton).click();
     }
 
 }
