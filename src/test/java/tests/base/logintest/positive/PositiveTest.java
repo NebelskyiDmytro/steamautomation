@@ -30,7 +30,7 @@ public class PositiveTest extends BaseTest {
         if (signInPage.isCaptchaDisplayed()) {
             basePage.SkipTest(CAPTCHA_SKIP_MESSAGE);
         }
-        signInPage.signInWithCredentials(USER1_LOGIN, USER2_PASS, true);
+        signInPage.signInWithCredentials(USER2_LOGIN, USER2_PASS, true);
         signInPage.verifySteamGuardDisplayed();
     }
 

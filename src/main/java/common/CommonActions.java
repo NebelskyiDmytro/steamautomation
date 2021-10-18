@@ -12,12 +12,13 @@ import static common.Config.*;
 import static constants.Constant.TimeoutVariables.IMPLICIT_WAIT;
 
 public class CommonActions {
-    static WebDriver driver = null;
+
+    protected WebDriver driver = null;
 
     /**
      * This is implementation of singleton pattern to use only single instance of browser
      */
-    public static synchronized WebDriver createDriver() {
+    public synchronized WebDriver createDriver() {
         if (driver == null) {
 
             ChromeOptions options = new ChromeOptions();

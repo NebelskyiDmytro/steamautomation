@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5eb3b0b1-0013-4a85-93c3-c83e44fa19f3" name="Changes" comment="Minor changes">
+    <list default="true" id="5eb3b0b1-0013-4a85-93c3-c83e44fa19f3" name="Changes" comment="MAJOR - Code refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/constants/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/constants/Constant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modules/HeaderNavigationModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modules/HeaderNavigationModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/base/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/steam_app/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/steam_app/ProfilePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/steam_app/SignInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/steam_app/SignInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/CommonActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/CommonActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/logintest/negative/NegativeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/logintest/negative/NegativeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/logintest/positive/PositiveTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/logintest/positive/PositiveTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
