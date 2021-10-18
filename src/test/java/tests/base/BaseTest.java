@@ -35,7 +35,7 @@ public class BaseTest {
 
     @AfterSuite(alwaysRun = true)
     public void close() {
-        if (HOLD_BROWSER_OPEN) {
+        if (!HOLD_BROWSER_OPEN) {
             driver.quit();
         }
     }

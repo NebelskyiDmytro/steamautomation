@@ -14,6 +14,9 @@ import static constants.Constant.TimeoutVariables.IMPLICIT_WAIT;
 public class CommonActions {
     static WebDriver driver = null;
 
+    /**
+     * This is implementation of singleton pattern to use only single instance of browser
+     */
     public static synchronized WebDriver createDriver() {
         if (driver == null) {
 
