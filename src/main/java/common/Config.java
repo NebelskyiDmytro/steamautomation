@@ -13,12 +13,6 @@ public class Config {
     public static final String PLATFORM_AND_BROWSER = "win_chrome";
 
     /**
-     * To keep the browser open after suite
-     * if true - browser will stay opened
-     */
-    public static final Boolean HOLD_BROWSER_OPEN = false;
-
-    /**
      * Clear browser cookies and local storage after each iteration
      * if true - clear cookies
      */
