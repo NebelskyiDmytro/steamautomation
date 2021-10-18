@@ -14,19 +14,20 @@ import static constants.Constant.TimeoutVariables.IMPLICIT_WAIT;
 public class CommonActions {
 
     protected WebDriver driver = null;
+    protected ChromeOptions options = null;
 
     /**
      * This is implementation of singleton pattern to use only single instance of browser
      */
     public synchronized WebDriver createDriver() {
-        if (driver == null) {
 
-            ChromeOptions options = new ChromeOptions();
+        if (driver == null) {
 
             switch (PLATFORM_AND_BROWSER) {
                 case "win_chrome":
                     System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
                     System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, String.valueOf(CHROME_CLIENT_LOG));
+                    options = new ChromeOptions();
                     options.addArguments("--lang=" + CHROME_LANGUAGE);
                     driver = new ChromeDriver(options);
                     break;
@@ -36,8 +37,11 @@ public class CommonActions {
 
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
+
         }
+
         return driver;
+
     }
 
 }
