@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.SkipException;
 
 import static constants.Constant.TimeoutVariables.EXPLICIT_WAIT;
 
@@ -17,12 +19,25 @@ public class BasePage {
         this.driver = driver;
     }
 
+    public void SkipTest(String message) {
+        throw new SkipException(message);
+    }
+
     public void open(String url) {
         driver.get(url);
     }
 
     public String getCurrentTitle() {
         return driver.getTitle();
+    }
+
+    public void assertElementDisplayed(WebElement element) {
+        try {
+            waitElementIsVisible(element);
+            Assert.assertTrue(element.isDisplayed());
+        } catch (org.openqa.selenium.TimeoutException e) {
+            Assert.fail(e.getLocalizedMessage());
+        }
     }
 
     public boolean isElementDisplayed(WebElement element) {

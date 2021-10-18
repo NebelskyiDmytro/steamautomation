@@ -3,6 +3,7 @@ package pages.steam_app;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import pages.base.BasePage;
 
 public class ProfilePage extends BasePage {
@@ -22,6 +23,14 @@ public class ProfilePage extends BasePage {
 
     public int getProfileLevel() {
         return Integer.parseInt(waitElementIsVisible(profileLevel).getText());
+    }
+
+    public void verifyDisplayedNameIs(String username) {
+        Assert.assertEquals(getProfileDisplayedName(), username);
+    }
+
+    public void verifyDisplayedLevelIs(int level) {
+        Assert.assertEquals(getProfileLevel(), level);
     }
 
 }

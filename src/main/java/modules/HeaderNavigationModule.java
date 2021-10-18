@@ -3,6 +3,7 @@ package modules;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 import pages.base.BasePage;
 
 public class HeaderNavigationModule extends BasePage {
@@ -45,6 +46,10 @@ public class HeaderNavigationModule extends BasePage {
 
     public void clickAvatar() {
         waitElementIsClickable(avatarButton).click();
+    }
+
+    public void verifyUserIs(String username) {
+        Assert.assertEquals(getLoggedAccountName(), username);
     }
 
     public void changeLanguage(String language) {

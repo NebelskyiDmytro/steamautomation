@@ -10,6 +10,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import pages.base.BasePage;
+import pages.steam_app.ProfilePage;
+import pages.steam_app.SignInPage;
 import pages.steam_app.WelcomePage;
 
 import static common.Config.CLEAR_COOKIES_AND_STORAGE;
@@ -23,6 +25,9 @@ public class BaseTest {
     protected BasePage basePage = PageFactory.initElements(driver, BasePage.class);
     protected WelcomePage welcomePage = PageFactory.initElements(driver, WelcomePage.class);
     protected HeaderNavigationModule headerNavigationModule = PageFactory.initElements(driver, HeaderNavigationModule.class);
+
+    protected SignInPage signInPage = PageFactory.initElements(driver, SignInPage.class);
+    protected ProfilePage profilePage = PageFactory.initElements(driver, ProfilePage.class);
 
     @AfterTest
     public void clearCookiesAndLocalStorage() {

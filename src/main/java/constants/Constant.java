@@ -3,8 +3,8 @@ package constants;
 public class Constant {
 
     public static class TimeoutVariables {
-        public static final int THREAD_SLEEP = 5;
-        public static final int IMPLICIT_WAIT = 5;
+        public static final int THREAD_SLEEP = 2;
+        public static final int IMPLICIT_WAIT = 10;
         public static final int EXPLICIT_WAIT = 10;
     }
 
@@ -22,10 +22,16 @@ public class Constant {
     public static class Users {
         public static final String USER1_LOGIN = "kahramanakyil";
         public static final String USER1_PASS = "Nebelskyi2021";
+        public static final String USER2_LOGIN = "hilli477";
+        public static final String USER2_PASS = "Nebelskyi2021";
     }
 
     public static class ErrorMessages {
         public static final String LOGIN_ERROR = "The account name or password that you have entered is incorrect.";
+    }
+
+    public static class LoggerMessages {
+        public static final String CAPTCHA_SKIP_MESSAGE = "Test execution is skipped. Captcha is displayed.";
     }
 
 }
