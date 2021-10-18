@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5eb3b0b1-0013-4a85-93c3-c83e44fa19f3" name="Changes" comment="MAJOR - Singleton pattern added">
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/CommonActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/CommonActions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/base/BaseTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1zb8emT8ZADGifeGWpC5RmhSqxk" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.PositiveTest.loginSuccessTest">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="API_Test.API" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="steamautomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.base.debug_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.base.debug_tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.base.debug_tests.API_Test" />
+      <option name="METHOD_NAME" value="API" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="API_Test.getUsers" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="steamautomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.base.debug_tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.base.debug_tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.base.debug_tests.API_Test" />
+      <option name="METHOD_NAME" value="getUsers" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/DNebelskyi/steamautomation/src/test/resources/testing.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="steamautomation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testing.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/DNebelskyi/steamautomation/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="steamautomation" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PositiveTest.loginSuccessTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="steamautomation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.base.logintest.positive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.base.logintest.positive" />
+      <option name="MAIN_CLASS_NAME" value="tests.base.logintest.positive.PositiveTest" />
+      <option name="METHOD_NAME" value="loginSuccessTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.PositiveTest.loginSuccessTest" />
+        <item itemvalue="TestNG.API_Test.getUsers" />
+        <item itemvalue="TestNG.API_Test.API" />
+        <item itemvalue="TestNG.C:/Users/DNebelskyi/steamautomation/src/test/resources/testing.xml" />
+        <item itemvalue="TestNG.C:/Users/DNebelskyi/steamautomation/src/test/resources/testng.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5eb3b0b1-0013-4a85-93c3-c83e44fa19f3" name="Changes" comment="" />
+      <created>1634405526838</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1634405526838</updated>
+    </task>
+    <task id="LOCAL-00001" summary="MAJOR - New pages, configuration and framework updates">
+      <created>1634412511868</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1634412511868</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gitignore added">
+      <created>1634412598737</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634412598737</updated>
+    </task>
+    <task id="LOCAL-00003" summary="MAJOR - Update">
+      <created>1634417871859</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1634417871860</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Retry methods were removed">
+      <created>1634500913962</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634500913962</updated>
+    </task>
+    <task id="LOCAL-00005" summary="minor">
+      <created>1634500977009</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1634500977009</updated>
+    </task>
+    <task id="LOCAL-00006" summary="MAJOR - Singleton pattern added">
+      <created>1634555247345</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1634555247345</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="MAJOR - New pages, configuration and framework updates" />
+    <MESSAGE value="gitignore added" />
+    <MESSAGE value="MAJOR - Update" />
+    <MESSAGE value="Retry methods were removed" />
+    <MESSAGE value="minor" />
+    <MESSAGE value="MAJOR - Singleton pattern added" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAJOR - Singleton pattern added" />
+  </component>
+</project>
