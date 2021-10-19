@@ -18,6 +18,7 @@ public class SettingsTest_001 extends BaseTest {
             basePage.SkipTest(CAPTCHA_SKIP_MESSAGE);
         }
         signInPage.signInWithCredentials(USER1_LOGIN, USER1_PASS, true);
+        headerNavigationModule.verifyAccountNameIs(USER1_LOGIN);
         headerNavigationModule.clickAvatar();
         profilePage.clickEditProfile();
         try {

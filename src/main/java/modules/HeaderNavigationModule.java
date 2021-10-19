@@ -1,5 +1,6 @@
 package modules;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +13,7 @@ public class HeaderNavigationModule extends BasePage {
         super(driver);
     }
 
+    private static final By accountName = By.xpath("//span[@class=\"persona online\"]");
     @FindBy(xpath = "//span[@id=\"logo_holder\"]//img")
     public static WebElement steamLogoImage;
     @FindBy(xpath = "//div[@class=\"supernav_container\"]/a[1]")
@@ -40,16 +42,24 @@ public class HeaderNavigationModule extends BasePage {
         waitElementIsClickable(loginButton).click();
     }
 
-    public String getLoggedAccountName() {
+    public String getProfileName() {
         return waitElementIsVisible(accountPulldown).getText();
+    }
+
+    public String getAccountName() {
+        return waitElementIsPresent(accountName).getAttribute("innerText");
     }
 
     public void clickAvatar() {
         waitElementIsClickable(avatarButton).click();
     }
 
-    public void verifyUserIs(String username) {
-        Assert.assertEquals(getLoggedAccountName(), username);
+    public void verifyProfileNameIs(String username) {
+        Assert.assertEquals(getProfileName(), username);
+    }
+
+    public void verifyAccountNameIs(String username) {
+        Assert.assertEquals(getAccountName(), username);
     }
 
     public void changeLanguage(String language) {

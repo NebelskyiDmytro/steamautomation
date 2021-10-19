@@ -4,7 +4,7 @@
     <test name="RegressionTest">
         <classes>
             <class name="tests.base.login_tests.positive.LoginTest_001"/>
-            <class name="tests.base.login_tests.negative.LoginTest_002"/>
+            <class name="tests.base.settings_tests.SettingsTest_001"/>
         </classes>
     </test>
 </suite>

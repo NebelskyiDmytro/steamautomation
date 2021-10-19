@@ -17,9 +17,8 @@ public class LoginTest_001 extends BaseTest {
             basePage.SkipTest(CAPTCHA_SKIP_MESSAGE);
         }
         signInPage.signInWithCredentials(USER1_LOGIN, USER1_PASS, true);
-        headerNavigationModule.verifyUserIs(USER1_LOGIN);
+        headerNavigationModule.verifyAccountNameIs(USER1_LOGIN);
         headerNavigationModule.clickAvatar();
-        profilePage.verifyDisplayedNameIs(USER1_LOGIN);
         profilePage.verifyDisplayedLevelIs(0);
     }
 

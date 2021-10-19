@@ -58,6 +58,11 @@ public class BasePage {
         return element;
     }
 
+    public WebElement waitElementIsPresent(By element) {
+        new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.presenceOfElementLocated(element));
+        return driver.findElement(element);
+    }
+
     public WebElement waitElementIsClickable(WebElement element) {
         new WebDriverWait(driver, EXPLICIT_WAIT).until(ExpectedConditions.elementToBeClickable(element));
         return element;
